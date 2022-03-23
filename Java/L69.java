@@ -1,5 +1,8 @@
 public class L69 {
     public static void main(String[] args) {
+//        int x=1000000;
+//        System.out.println("("+x+":"+mySqrt(x)+")");
+//        System.out.println(250000*250000);
         for (int i=0;i<36;i++){
             System.out.println("("+i+":"+mySqrt(i)+")");
         }

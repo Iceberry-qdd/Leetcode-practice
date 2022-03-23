@@ -17,7 +17,7 @@
 
 public class L206 {
     public static void main(String[] args) {
-        int[] arr = {1};
+        int[] arr = {1,2,3};
         ListNode list = new ListNode(arr);
         System.out.println(reverseList(list));
     }
@@ -32,6 +32,6 @@ public class L206 {
             con = cur.next;
         }
         cur.next = pre;
-        return cur;
+        return pre;
     }
 }

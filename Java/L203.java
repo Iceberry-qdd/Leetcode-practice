@@ -25,17 +25,17 @@ class ListNode {
         this.next = next;
     }
 
-    @Override
-    public String toString() {
-        StringBuilder sb = new StringBuilder();
-        ListNode node = this;
-        while (node != null) {
-            sb.append(node.val).append("->");
-            node = node.next;
-        }
-        sb.delete(sb.length() - 2, sb.length());
-        return sb.toString();
-    }
+//    @Override
+//    public String toString() {
+//        StringBuilder sb = new StringBuilder();
+//        ListNode node = this;
+//        while (node != null) {
+//            sb.append(node.val).append("->");
+//            node = node.next;
+//        }
+//        sb.delete(sb.length() - 2, sb.length());
+//        return sb.toString();
+//    }
 }
 
 public class L203 {

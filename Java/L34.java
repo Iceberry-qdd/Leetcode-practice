@@ -34,4 +34,16 @@ public class L34 {
         }
         return loc;
     }
+
+    public static void test(int length, int start, int end, int target) {
+        //ArrayList<Integer> nums=new ArrayList<>(length);
+        Random random = new Random();
+        IntStream ints = random.ints(length, start, end);
+        //ints.forEach(nums::add);
+        int[] nums = ints.boxed().mapToInt(Integer::intValue).toArray();
+        int[] loc = searchRange(nums, target);
+        System.out.println(Arrays.toString(nums));
+        System.out.println(Arrays.toString(loc));
+        System.out.println("\n");
+    }
 }
